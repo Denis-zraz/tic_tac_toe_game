@@ -1,17 +1,18 @@
-// import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { LOGIN } from './constants/path';
+import { BASE_PATH, GAME, HISTORY, LOGIN } from './constants/path';
 import Layout from './components/Layout';
 import Login from './pages/Login';
+import Game from './pages/Game';
+import History from './pages/History';
 
 function App() {
-    // const [count, setCount] = useState(0)
-
     return (
         <Routes>
-            <Route path={LOGIN} element={<Layout />}>
-                <Route index element={<Login />} />
+            <Route path={BASE_PATH} element={<Layout />}>
+                <Route path={LOGIN} element={<Login />} />
+                <Route path={GAME} element={<Game />} />
+                <Route path={HISTORY} element={<History />} />
             </Route>
         </Routes>
     );
