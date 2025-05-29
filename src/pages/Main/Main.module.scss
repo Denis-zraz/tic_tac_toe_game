@@ -1,0 +1,44 @@
+@use '../../style/var.scss';
+
+.welcome_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_title {
+        text-align: center;
+    }
+
+    &_box {
+        width: 40%;
+        height: 60%;
+        border: 1px solid rgb(214, 211, 211);
+    }
+
+    &_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &_btn {
+        margin-top: 20px;
+        min-width: 60px;
+        height: 50px;
+
+        background-color: var.$dark_blue;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: var.$dark_blue_hover;
+        }
+    }
+
+    &_link {
+        text-decoration: none;
+        color: var.$white_color;
+        cursor: pointer;
+    }
+}

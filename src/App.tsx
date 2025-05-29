@@ -5,11 +5,13 @@ import Layout from './components/Layout';
 import Login from './pages/Login';
 import Game from './pages/Game';
 import History from './pages/History';
+import Main from './pages/Main';
 
 function App() {
     return (
         <Routes>
             <Route path={BASE_PATH} element={<Layout />}>
+                <Route index element={<Main />} />
                 <Route path={LOGIN} element={<Login />} />
                 <Route path={GAME} element={<Game />} />
                 <Route path={HISTORY} element={<History />} />
