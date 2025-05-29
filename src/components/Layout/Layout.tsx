@@ -1,7 +1,10 @@
-// import React from 'react'
+import Header from '../Header'
+import styles from './Layout.module.scss'
 
 export default function Layout() {
   return (
-    <div>Layout</div>
+    <section className={styles.game_wrapper}>
+        <Header />
+    </section>
   )
 }

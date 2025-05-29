@@ -1,0 +1,12 @@
+@use '../../style/var.scss';
+
+.game_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1020px;
+    height: 100vh;
+    margin: 0 auto;
+
+    background-color: var.$white_color;
+}

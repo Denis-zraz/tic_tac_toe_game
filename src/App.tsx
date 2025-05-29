@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+import './App.module.scss';
 import { BASE_PATH, GAME, HISTORY, LOGIN } from './constants/path';
 import Layout from './components/Layout';
 import Login from './pages/Login';
