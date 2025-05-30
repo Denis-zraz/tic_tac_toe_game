@@ -1,0 +1,10 @@
+@use './var';
+
+@mixin btn-item {
+    margin-top: 20px;
+    min-width: 60px;
+    height: 50px;
+
+    background-color: var.$dark_blue;
+    border-radius: 6px;
+}

@@ -9,7 +9,7 @@ const InAccountSlice = createSlice({
     name: 'account',
     initialState,
     reducers: {
-        toggleInAccount: (state, { payload }) => {
+        toggleInAccount(state, { payload }) {
             state.inAccount = payload;
         },
     },

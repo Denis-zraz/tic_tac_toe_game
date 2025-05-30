@@ -1,4 +1,5 @@
-@use '../../style/var.scss';
+@use '../../style/var';
+@import '../../style/mixins';
 
 .welcome_content {
     width: 100%;
@@ -24,12 +25,7 @@
     }
 
     &_btn {
-        margin-top: 20px;
-        min-width: 60px;
-        height: 50px;
-
-        background-color: var.$dark_blue;
-        border-radius: 6px;
+        @include btn-item;
 
         &:hover {
             background-color: var.$dark_blue_hover;
